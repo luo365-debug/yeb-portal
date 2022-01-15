@@ -1,0 +1,8 @@
+程序入口：main.js
+	import组件，新建vue实例，路由，渲染app组件里的东西
+
+
+App.vue里的template标签：
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+        在路由配置文件./router/index.js
