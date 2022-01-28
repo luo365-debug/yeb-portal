@@ -32,4 +32,15 @@ axios.interceptors.response.use(success=>{
         }
     }
     return;
-})
+});
+
+//以防工程中需要添加前置路径
+let base = '';
+
+export const postRequest=(url,param)=>{
+    return axios({
+        method:'post',
+        url:`${base}${url}`,
+        data:param
+    })
+}
